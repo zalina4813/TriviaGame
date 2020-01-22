@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Trivia Game</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+  <div class="jumbotron">
+    <h1>Basic Trivia Game!</h1>
+    <h2><button id="start">Start!</button></h2>
+  </div>
+
+<p>
+  <h3>1."Who sang the \"Friends\" theme song?",</h3>
+    <div id="choices">
+      <input type="radio" name="Q1" value="incorrect">Spin Doctor
+      <input type="radio" name="Q1" value="incorrect">The Wallflowers
+      <input type="radio" name="Q1" value="correct"> The Rembrandts
+      <input type="radio" name="Q1" value="incorrect"> Gin Blossoms
+    </div>
+<br>
+  <h3>2."The 2014 Winter Olympics where held in which Country?" </h3>
+    <div id="choices">
+      <input type="radio" name="Q2" value="incorrect"> Tokio, Japan
+      <input type="radio" name="Q2" value="correct"> Sochi, Russia
+      <input type="radio" name="Q2" value="incorrect"> Pyeng Chang, South Korea
+      <input type="radio" name="Q2" value="incorrect"> Vancouver, Canada
+    </div>
+  <br>
+  <h3>3.Which email service is owned by Microsoft?</h3>
+    <div id="choices">
+      <input type="radio" name="Q3" value="correct"> Hotmail
+      <input type="radio" name="Q3" value="incorrect">Gmail
+      <input type="radio" name="Q3" value="incorrect"> Yahoo
+      <input type="radio" name="Q3" value="incorrect"> Earthling
+    </div>
+    <br>
+  <h3>4.Which planet has the most gravity?</h3>
+    <div id="choices">
+      <input type="radio" name="Q4" value="incorrect"> Earth
+      <input type="radio" name="Q4" value="incorrect">Mars
+      <input type="radio" name="Q4" value="incorrect"> Venus
+      <input type="radio" name="Q4" value="correct"> Jupiter
+    </div>
+    <br>
+  <h3>5.Which animal can be seen on the Porsche logo? </h3>
+    <div id="choices">
+      <input type="radio" name="Q5" value="incorrect">Lion
+      <input type="radio" name="Q5" value="correct"> Horse
+      <input type="radio" name="Q5" value="incorrect"> Mustang
+      <input type="radio" name="Q5" value="incorrect"> Panthera
+    </div>
+</p>
+
+<h2><button id="submit" type="submit">Submit Answers</button></h2>
+
+<h3>Correct Answers: <span id="corrAnswers"></span></h3>
+<h3>Incorrect Answers: <span id="wrongAnswers"></span></h3>
+<h3>Unanswered: <span id="noAnswer"></span></h3>
+
+
+    <script src="assets/javascript/app.js"></script>
+  </body>
+</html>
