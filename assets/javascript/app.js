@@ -1,9 +1,9 @@
-var timeLeft = 20;
-var timerId;
-var submitButton;
-var correct = 0;
-var incorrect = 0;
-var unanswered = 0;
+let timeLeft = 20;
+let timerId;
+let submitButton;
+let correct = 0;
+let incorrect = 0;
+let unanswered = 0;
 
 //starts clock on click
 $("#start").on("click", function(){
